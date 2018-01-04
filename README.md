@@ -18,6 +18,10 @@ console.unicorn("So magical!");
 🦄  So magical!
 ```
 
+# Changelog
+
+Add new emoji from https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb with selection just one word emoji 🔥
+
 # License
 
 Published under the MIT license.
