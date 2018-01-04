@@ -18,7 +18,7 @@ const commands = [
 
 {
     // Create custom commands
-    commands.forEach(({ name, emoji }) => window.console[name] = (...args) => console.log(emoji + ' ' + args.join(', ')));
+    commands.forEach(({ name, emoji }) => window.console[name] = console.log.bind(console, emoji));
 }
 
 // Log to the console!
