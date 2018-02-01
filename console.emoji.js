@@ -9,17 +9,10 @@
  */
 
 // Define your custom commands and emoji
-const commands = [
-    { emoji: '🦄', name: 'unicorn' },
-    { emoji: '🍕', name: 'pizza' },
-    { emoji: '🍺', name: 'beer' },
-    { emoji: '💩', name: 'poo' }
-];
-
-{
-    // Create custom commands
-    commands.forEach(({ name, emoji }) => window.console[name] = (...args) => console.log(emoji + ' ' + args.join(', ')));
-}
+console.unicorn = console.log.bind(console, '🦄');
+console.pizza = console.log.bind(console, '🍕');
+console.beer = console.log.bind(console, '🍺');
+console.poo = console.log.bind(console, '💩');
 
 // Log to the console!
 console.unicorn("Magical!");
